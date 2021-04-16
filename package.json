@@ -1,0 +1,14 @@
+{
+  "name": "eco-actions-mock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sungjoon Park",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore \"./*.+(html|ts|js|tsx)\""
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-html": "^6.1.2"
+  }
+}
