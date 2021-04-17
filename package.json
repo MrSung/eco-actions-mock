@@ -5,10 +5,12 @@
   "author": "Sungjoon Park",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore \"./*.+(html|ts|js|tsx)\""
+    "lint": "eslint --ignore-path .gitignore \"./*.+(html|ts|js|tsx)\"",
+    "fmt": "prettier --write ."
   },
   "devDependencies": {
     "eslint": "^7.24.0",
-    "eslint-plugin-html": "^6.1.2"
+    "eslint-plugin-html": "^6.1.2",
+    "prettier": "2.2.1"
   }
 }
