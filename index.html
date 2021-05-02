@@ -24,6 +24,7 @@
         --color-bar-walk: #d6d696;
       }
     </style>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </head>
 
   <body
@@ -113,8 +114,8 @@
 
     <article>
       <div class="container px-4 py-1 mx-auto sm:px-0">
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 w-full lg:w-1/3">
+        <ul class="masonry -m-4">
+          <li class="masonry-item p-4 w-full lg:w-1/3">
             <div
               class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
             >
@@ -137,9 +138,12 @@
               <h1 class="my-3 text-lg leading-6 font-bold">
                 燃えるゴミを出す前に、なんのゴミで構成されているかを見て、リサイクルできるものはないか確認する
               </h1>
+              <p class="text-xs text-gray-400">
+                事前に買い物リストを作ることで、余計な消費を防ぎます
+              </p>
             </div>
-          </div>
-          <div class="p-4 w-full lg:w-1/3">
+          </li>
+          <li class="masonry-item p-4 w-full lg:w-1/3">
             <div
               class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
             >
@@ -162,12 +166,9 @@
               <h1 class="my-3 text-lg leading-6 font-bold">
                 余計な消費を防ぐため、事前に買うものをリストアップ
               </h1>
-              <p class="text-xs text-gray-400">
-                事前に買い物リストを作ることで、余計な消費を防ぎます
-              </p>
             </div>
-          </div>
-          <div class="p-4 w-full lg:w-1/3">
+          </li>
+          <li class="masonry-item p-4 w-full lg:w-1/3">
             <div
               class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
             >
@@ -190,10 +191,88 @@
                 </svg>
               </span>
               <h1 class="my-3 text-lg leading-6 font-bold">
-                生活必需品以外に何も買わない月を1か月作ってみて、普段いかに消費しているかを意識する
+                生活必需品以外に何も買わない月を1か月作る
               </h1>
             </div>
-          </div>
+          </li>
+          <li class="masonry-item p-4 w-full lg:w-1/3">
+            <div
+              class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
+            >
+              <div
+                class="absolute h-2 w-full top-0 left-0 right-0"
+                style="background-color: var(--color-bar-shopping-cart)"
+              ></div>
+              <span style="color: var(--color-bar-shopping-cart)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
+                </svg>
+              </span>
+              <h1 class="my-3 text-lg leading-6 font-bold">見出しが入ります</h1>
+              <p class="text-xs text-gray-400">
+                事前に買い物リストを作ることで、余計な消費を防ぎます
+              </p>
+            </div>
+          </li>
+          <li class="masonry-item p-4 w-full lg:w-1/3">
+            <div
+              class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
+            >
+              <div
+                class="absolute h-2 w-full top-0 left-0 right-0"
+                style="background-color: var(--color-bar-home)"
+              ></div>
+              <span style="color: var(--color-bar-home)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                  />
+                </svg>
+              </span>
+              <h1 class="my-3 text-lg leading-6 font-bold">
+                見出しのみのデザイン。高さを可変にしてもいいかも。
+              </h1>
+            </div>
+          </li>
+          <li class="masonry-item p-4 w-full lg:w-1/3">
+            <div
+              class="h-full bg-white shadow p-8 rounded-lg overflow-hidden relative"
+            >
+              <div
+                class="absolute h-2 w-full top-0 left-0 right-0"
+                style="background-color: var(--color-bar-walk)"
+              ></div>
+              <span style="color: var(--color-bar-walk)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <h1 class="my-3 text-lg leading-6 font-bold">
+                少し長い見出しが入ります。少し長い見出しが入ります。
+              </h1>
+            </div>
+          </li>
           <!-- <div class="p-4 w-full lg:w-1/3">
             <div
               class="h-full bg-white shadow px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
@@ -243,7 +322,7 @@
               </div>
             </div>
           </div> -->
-        </div>
+        </ul>
       </div>
     </article>
 
@@ -290,5 +369,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function () {
+        // your page initialization code here
+        // the DOM will be available here
+        var grid = document.querySelector(".masonry");
+        var msnry = new Masonry(grid, {
+          // options...
+          itemSelector: ".masonry-item",
+        });
+      })();
+    </script>
   </body>
 </html>
